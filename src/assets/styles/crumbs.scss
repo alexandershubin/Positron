@@ -1,0 +1,26 @@
+.crumbs-list {
+  display: flex;
+  align-items: center;
+}
+
+.crumbs-item {
+  margin-right: 25px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #33374E;
+  position: relative;
+  margin-bottom: 60px;
+
+  &:not(.active)::after {
+    content: url("./../../assets/img/arrow.svg");
+    position: absolute;
+    right: -15px;
+    top: 0;
+    width: 5px;
+    height: 8px;
+  }
+}
+
+.crumbs-item.active {
+  color: #797B86;
+}

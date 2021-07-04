@@ -1,0 +1,145 @@
+.swiper-container {
+  position: initial;
+}
+
+.slider {
+  position: relative;
+  margin-bottom: 50px;
+
+  &__top {
+    margin: 26px 0 60px;
+  }
+
+  &__h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #1F2432;
+    margin: 0;
+  }
+
+  &__item {
+    background: #F6F8FA;
+    border-radius: 5px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    min-height: 584px;
+  }
+
+  &__img {
+    margin: 0 auto 5px;
+  }
+
+  &__h4 {
+    margin: 0 0 10px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #1F2432;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 20px;
+    color: #1F2432;
+    margin: 0;
+  }
+
+  &__price-rub {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: 0.005em;
+    color: #1F2432;
+    margin: auto 0 3px;
+  }
+
+  &__price-eur {
+    display: block;
+    font-size: 16px;
+    line-height: 23px;
+    color: #797B86;
+    margin-bottom: 20px;
+  }
+}
+
+.swiper-button-next {
+  content: url("../../assets/img/arrow-left.svg");
+}
+
+.swiper-button-prev {
+  content: url("../../assets/img/arrow-right.svg");
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #FFFFFF !important;
+  fill: white !important;
+  stroke: black !important;
+  background: #90A2B5;
+  border-radius: 50%;
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+
+  &::after {
+    font-size: 12px !important;
+  }
+}
+
+.swiper-button-prev {
+  right: 120px;
+  left: auto;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+  position: absolute;
+  top: 4px;
+  right: 45px;
+  width: 60px;
+  bottom: auto;
+  left: auto;
+}
+
+.swiper-pagination-current {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #212121;
+}
+
+.swiper-pagination-total {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #797B86;
+}
+
+@media(max-width: 768px) {
+  .slider {
+    &__item {
+      min-height: 540px;
+    }
+
+    &__top {
+      margin: 26px 0 85px;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 50px;
+  }
+
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    top: 54px;
+  }
+}

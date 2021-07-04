@@ -1,0 +1,50 @@
+.install {
+  background: #F6F8FA;
+  border-radius: 5px;
+  padding: 28px 25px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+
+  &__input {
+    height: 20px;
+    width: 20px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    color: #1F2432;
+    margin: 0;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 21px;
+    color: #797B86;
+  }
+
+  &__img {
+    margin: 0 20px;
+  }
+}
+
+@media(max-width: 1200px) {
+  .install {
+    margin-bottom: 0;
+  }
+}
+
+@media(max-width: 768px) {
+  .install {
+    padding: 15px;
+
+    &__input {
+      height: auto;
+      width: auto;
+    }
+  }
+}
