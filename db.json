@@ -84,5 +84,21 @@
       "image": "slide-2.png"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "productsIds": [
+        1,
+        2,
+        3
+      ],
+      "itemPriceProducts": [
+        37932,
+        25288,
+        12644
+      ],
+      "totalPriceProducts": 75864,
+      "install": true,
+      "id": 1
+    }
+  ]
 }
